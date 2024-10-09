@@ -1,0 +1,88 @@
+#intro {
+    background-image: url("/assets/images/Background_Intro.png");
+    background-size: cover;
+    /*object-fit: cover;*/
+}
+
+.info {
+    padding-block: 120px 80px;
+    padding-inline: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info h1 {
+    margin-block: 8px 20px;
+}
+
+.info p {
+    font: var(--text-sm);
+}
+
+.avatar {
+    position: relative;
+    display: inline-block;
+    margin-block: 8px 62px;
+    margin-bottom: 64px;
+
+    #user {
+        width: 87px;
+        padding: 4px;
+        border: 2px solid var(--red);
+        border-radius: 50%;
+    }
+
+    #code {
+        position: absolute;
+        right: -8%;
+        bottom: -4%;
+    }
+}
+
+#user-info {
+    text-align: center;
+
+    #info-subtitle {
+        font: var(--subtitle);
+        color: var(--gray-500);
+
+        span {
+            color: var(--red);
+        }
+    }
+
+    p {
+        font: var(--text-sm);
+        color: var(--gray-400);
+    }
+}
+
+#tags {
+    width: 754px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font: var(--text-md);
+}
+
+#tags img {
+    width: 24px;
+    height: 24px;
+}
+
+#tags li {
+    background-color: var(--gray-300);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 16px;
+    border-radius: 50px;
+    margin-bottom: 94px;
+}
+
+.user-footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 129px;
+}
